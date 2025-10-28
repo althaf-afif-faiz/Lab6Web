@@ -77,15 +77,87 @@ gambar dummy dan deskripsi singkat).
 <img width="2192" height="8992" alt="code portofolio" src="https://github.com/user-attachments/assets/718198ec-f8b8-4990-a6d2-ba07ed8852cd" />
 
 ### Output :      
-#### Output dari navigasi Tentang saya :     
+#### Output dari navbar Tentang saya :     
 <img width="1354" height="687" alt="image" src="https://github.com/user-attachments/assets/e116230b-9e03-4882-b229-90d662e6e3d2" />
 
-#### Output dari navigasi portofolio :       
+#### Output dari navbar portofolio :       
 <img width="1347" height="684" alt="image" src="https://github.com/user-attachments/assets/56d150e2-5ebf-4cf1-ba90-5b315a6504f2" />
 
+## Penjelasan Tugas :    
+### Bootstrap
+Bootstrap adalah framework front-end berbasis HTML, CSS, dan JavaScript yang digunakan untuk mempercepat pengembangan tampilan web responsif.  
+Bootstrap menyediakan komponen siap pakai seperti:
+- `.navbar` – untuk navigasi
+- `.container`, `.row`, `.col` – untuk layout grid system
+- `.card` – untuk menampilkan konten bergaya panel
 
+### Grid System
+Sistem grid Bootstrap membagi halaman menjadi 12 kolom fleksibel, memungkinkan penataan elemen agar tetap responsif di berbagai ukuran layar.
 
+---
 
+## Implementasi
 
+File utama: **`portfolio.html`**
 
+###  Struktur Halaman
+Halaman ini dibagi menjadi beberapa bagian utama:
+1. **Navbar** di bagian atas halaman.  
+2. **Section "Tentang Saya"** — menampilkan foto dan deskripsi diri.  
+3. **Section "Portfolio Saya"** — menampilkan tiga proyek dalam bentuk card.  
+4. **Footer** di bagian bawah halaman.
+
+---
+
+## Cuplikan Kode Penting
+
+### 1️. Navbar
+```html
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">AfifPortfolio</a>
+    ...
+  </div>
+</nav>
+```
+
+### 2️. Tentang Saya
+```
+<section id="tentang" class="text-center">
+  <div class="container mt-5 pt-5">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-4">
+        <img src="foto.jpg" />
+      </div>
+      <div class="col-md-7 text-md-start">
+        <h2 class="fw-bold">Althaf Afif Faiz</h2>
+        <p class="lead text-muted">
+          Saya seorang mahasiswa yang memiliki minat besar dalam pengembangan web dan desain
+          antarmuka pengguna...
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+``` 
+
+### 3️. Portfolio Saya    
+```
+<section id="portfolio">
+  <div class="container">
+    <h2 class="section-title">Portfolio Saya</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1581091215367-59ab6b3c94a9" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Website Sekolah</h5>
+            <p class="card-text text-muted">Website informatif sekolah dengan fitur berita...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
 
